@@ -20,10 +20,11 @@
 
 <!-- Navegación -->
 <nav class="navbar">
-    <div class="logo">
-        <i class="fa-solid fa-users-rays"></i> ColabUp
-    </div>
+    <a href="#" class="logo">
+        <img src="assets/images/logo.png" alt="Logo ColabUp" class="logo-img">
+    </a>
     <ul class="nav-links">
+        <li><a>Explorar</a></li>
         <li><a href="#mision-vision">Nosotros</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
         <li><a href="#equipo">Equipo</a></li>
@@ -45,13 +46,9 @@
     <h2 class="section-title">Misión & Visión</h2>
     <div class="grid-2-cols">
         <div class="card">
-            <i class="fa-solid fa-rocket icon-large"></i>
-            <h3>Nuestra Misión</h3>
             <p>Facilitar la gestión de proyectos, permitiendo que emprendedores, estudiantes y profesionales puedan transformar sus ideas en soluciones reales.</p>
         </div>
         <div class="card">
-            <i class="fa-solid fa-eye icon-large"></i>
-            <h3>Nuestra Visión</h3>
             <p>Contribuir al crecimiento de la innovación mediante la creación de un espacio digital donde las ideas puedan generar impacto en distintos sectores de la sociedad.</p>
         </div>
     </div>
@@ -62,26 +59,23 @@
     <h2 class="section-title">¿Por qué ColabUP?</h2>
     <div class="grid-3-cols">
         <div class="card card-benefit">
-            <i class="fa-regular fa-clock icon-medium"></i>
             <h4>Ahorro de Tiempo</h4>
-            <p>Encuentra rápidamente a los colaboradores ideales con habilidades complementarias.</p>
+            <p>Centraliza la comunicación y gestión de tareas en un solo lugar</p>
         </div>
         <div class="card card-benefit">
-            <i class="fa-solid fa-people-arrows icon-medium"></i>
             <h4>Flexibilidad</h4>
-            <p>Crea equipos y gestiona proyectos adaptándote a tus horarios y necesidades.</p>
+            <p>Permite colaboraciones adaptables a diversos horarios y niveles de compromiso</p>
         </div>
         <div class="card card-benefit">
-            <i class="fa-solid fa-laptop-code icon-medium"></i>
             <h4>Dinámica y Moderna</h4>
-            <p>Interfaz intuitiva orientada a la colaboración ágil y la gestión eficiente.</p>
+            <p>Interfaz intuitiva y ágil que utiliza metodologías actuales para conectar usuarios de forma eficiente</p>
         </div>
     </div>
 </section>
 
 <!-- Equipo -->
 <section id="equipo" class="section-container">
-    <h2 class="section-title">Nuestro Equipo Crynexia</h2>
+    <h2 class="section-title">Nuestro Equipo</h2>
     <div class="grid-3-cols team-grid">
         <div class="team-member">
             <div class="avatar"><i class="fa-solid fa-user"></i></div>
@@ -112,27 +106,34 @@
 
 <!-- Contacto y Footer -->
 <footer id="contacto">
-    <div class="footer-content grid-2-cols">
-        <div class="contact-info">
+    <div class="footer-content">
+        <!-- Izquierda: Formulario -->
+        <div class="contact-form-section">
             <h3>Contáctanos</h3>
-            <p>¿Tienes dudas sobre ColabUp? Escríbenos y nuestro equipo de soporte te ayudará.</p>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
             <form id="colabup-form">
-                <input type="text" id="nombre" placeholder="Tu Nombre" required>
-                <input type="email" id="correo" placeholder="Correo Electrónico" required>
-                <textarea id="mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                <div class="form-row">
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    <input type="tel" id="telefono" placeholder="Teléfono" required>
+                </div>
+                <textarea id="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-primary" style="align-self: flex-start;">Enviar</button>
             </form>
+        </div>
+
+        <!-- Derecha: Logo y Redes -->
+        <div class="footer-branding">
+            <a href="#" class="logo">
+                <img src="assets/images/logow.png" alt="Logo ColabUp" class="logo-img-footer">
+            </a>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2026 ColabUp por Crynexia. Todos los derechos reservados.</p>
+        <p>ColabUp &copy; 2026</p>
     </div>
 </footer>
 
