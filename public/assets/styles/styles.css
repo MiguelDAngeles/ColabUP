@@ -43,6 +43,19 @@ body {
     color: var(--primary-color);
 }
 
+/* Ajuste para la imagen del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    max-height: 60px; /* Esto limita la altura y lo hace encajar perfecto */
+    width: auto;      /* Mantiene la proporción para que no se deforme */
+    object-fit: contain;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -244,5 +257,98 @@ footer {
 
     .hero-content h1 {
         font-size: 2.2rem;
+    }
+}
+
+/* ====== AJUSTES DEL FOOTER (Contáctanos) ====== */
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact-form-section h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Pone Correo y Teléfono lado a lado */
+    gap: 1rem;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-body);
+    width: 100%;
+    outline: none;
+}
+
+.footer-branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img-footer {
+    max-width: 250px; /* Tamaño ideal para el logo en el footer */
+    height: auto;
+}
+
+.footer-branding .social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-branding .social-links a {
+    font-size: 2.5rem; /* Íconos grandes como en el mockup */
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-branding .social-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #FFFFFF; /* Franja inferior blanca como en el mockup */
+    color: var(--text-dark);
+    /* Forzamos a que la franja blanca ocupe todo el ancho */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .form-row {
+        grid-template-columns: 1fr; /* En celular, los inputs se ponen uno debajo de otro */
     }
 }
